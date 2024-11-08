@@ -34,12 +34,12 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddButton({
+--[[Tab:AddButton({
 	Name = "Script for AutoFarm",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/zakater5/LuaRepo/main/YBA/v3.lua"))()
   	end    
-})
+})]]--
 
 -- Tab Items --
 local Tab = Window:MakeTab({
@@ -48,13 +48,13 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddToggle({
+--[[Tab:AddToggle({
 	Name = "Auto Sell Rokakaka",
 	Default = false,
 	Callback = function(Value)
 		
 	end
-})
+})]]--
 
 -- Tab Teleports --
 local Tab = Window:MakeTab({
@@ -64,7 +64,7 @@ local Tab = Window:MakeTab({
 })
 
 -- Tab Misc --
-Tab:AddToggle({
+--[[Tab:AddToggle({
 	Name = "Anti-AFK",
 	Default = false,
 	Callback = function(Value)
@@ -107,7 +107,7 @@ Tab:AddTextbox({
 		_G.JumpPower = Value
 		JumpPower()
 	end
-})
+})]]--
 
 -- Tab Themes --
 local Tab = Window:MakeTab({
