@@ -15,7 +15,7 @@ local Rokakaka = getItem("Rokakaka")
 local PureRokakaka = getItem("Pure Rokakaka")
 local Diamond = getItem("Diamond")
 local GoldCoin = getItem("Gold Coin")
-local ZepellinsHeadband = getItem("Zepellin' s Headband")
+local ZepellinsHeadband = getItem("Zepellin's Headband")
 local MysteriousArrow = getItem("Mysterious Arrow")
 local StoneMask = getItem("Stone Mask")
 local QuintonsGlove = getItem("Quinton's Glove")
@@ -39,6 +39,15 @@ local function AutoGoldCoin()
         if GoldCoin then
             GoldCoin.Parent = Character
             wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
         end
     end
 end
@@ -48,6 +57,15 @@ local function AutoMystArrow()
         if MysteriousArrow then
             MysteriousArrow.Parent = Character
             wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
         end
     end
 end
@@ -57,6 +75,15 @@ local function AutoDiamond()
         if Diamond then
             Diamond.Parent = Character
             wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
         end
     end
 end
@@ -66,6 +93,15 @@ local function AutoPureRokakaka()
         if PureRokakaka then
             PureRokakaka.Parent = Character
             wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
         end
     end
 end
@@ -75,6 +111,15 @@ local function AutoZepellinsHeadband()
         if ZepellinsHeadband then
             ZepellinsHeadband.Parent = Character
             wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
         end
     end
 end
@@ -84,6 +129,15 @@ local function AutoStoneMask()
         if StoneMask then
             StoneMask.Parent = Character
             wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
         end
     end
 end
@@ -93,6 +147,15 @@ local function AutoQuintonsGlove()
         if QuintonsGlove then
             QuintonsGlove.Parent = Character
             wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
         end
     end
 end
@@ -102,6 +165,15 @@ local function AutoSteelBall()
         if SteelBall then
             SteelBall.Parent = Character
             wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
         end
     end
 end
@@ -111,6 +183,15 @@ local function AutoRibCage()
         if RibCage then
             RibCage.Parent = Character
             wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
         end
     end
 end
@@ -120,6 +201,15 @@ local function AutoAncientScroll()
         if AncientScroll then
             AncientScroll.Parent = Character
             wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
         end
     end
 end
@@ -129,6 +219,15 @@ local function AutoDiosDiary()
         if DiosDiary then
             DiosDiary.Parent = Character
             wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
         end
     end
 end
