@@ -21,21 +21,6 @@ local AncientScroll = PlayerName.Backpack:FindFirstChild("Ancient Scroll")
 local DiosDiary = PlayerName.Backpack:FindFirstChild("Dio's Diary")
 
 -- Function Items --
-function Rokakaka()
-	while _G.Rokakaka == true and Rokakaka do
-		Rokakaka.Parent = LivingName
-		wait(1)
-		local args = {
-			[1] = "EndDialogue",
-			[2] = {
-				["Option"] = "Option2",
-				["NPC"] = "Merchant",
-				["Dialogue"] = "Dialogue5"
-			}
-		}
-		game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-	end
-end
 
 ---- Tab Home ----
 local Tab = Window:MakeTab({
@@ -62,8 +47,19 @@ Tab:AddToggle({
 	Name = "Auto Sell Rokakaka",
 	Default = false,
 	Callback = function(Value)
-		_G.Rokakaka = Value
-		Rokakaka()
+		if Value == true and Rokakaka do
+			Rokakaka.Parent = LivingName
+			wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
+		end
 	end
 })
 
