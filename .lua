@@ -26,7 +26,7 @@ local DiosDiary = getItem("Dio's Diary")
 
 -- Function Items
 local function AutoRokakaka()
-    while _G.Rokakaka do
+    while _G.Rokakaka do wait(0.01)
         if Rokakaka then
             Rokakaka.Parent = Character
             wait(1)
@@ -55,7 +55,7 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 
-TabItems:AddToggle({
+Tab:AddToggle({
     Name = "Auto Sell Rokakaka",
     Default = false,
     Callback = function(Value)
@@ -66,7 +66,7 @@ TabItems:AddToggle({
     end
 })
 
-TabItems:AddToggle({
+Tab:AddToggle({
     Name = "Auto Sell Gold Coin",
     Default = false,
     Callback = function(Value)
@@ -82,7 +82,7 @@ Tab:AddToggle({
 	end
 })
   
-  Tab:AddToggle({
+Tab:AddToggle({
 	Name = "Auto Sell Diamond",
 	Default = false,
 	Callback = function(Value)
@@ -90,7 +90,7 @@ Tab:AddToggle({
 	end
 })
   
-  Tab:AddToggle({
+Tab:AddToggle({
 	Name = "Auto Sell Rib Cage",
 	Default = false,
 	Callback = function(Value)
@@ -98,7 +98,7 @@ Tab:AddToggle({
 	end
 })
   
-  Tab:AddToggle({
+Tab:AddToggle({
 	Name = "Auto Sell Zepellin's Headband",
 	Default = false,
 	Callback = function(Value)
@@ -106,7 +106,7 @@ Tab:AddToggle({
 	end
 })
   
-  Tab:AddToggle({
+Tab:AddToggle({
 	Name = "Stone Mask",
 	Default = false,
 	Callback = function(Value)
@@ -114,7 +114,7 @@ Tab:AddToggle({
 	end
 })
   
-  Tab:AddToggle({
+Tab:AddToggle({
 	Name = "Dio's Diary",
 	Default = false,
 	Callback = function(Value)
@@ -122,7 +122,7 @@ Tab:AddToggle({
 	end
 })
   
-  Tab:AddToggle({
+Tab:AddToggle({
 	Name = "Quinton's Glove",
 	Default = false,
 	Callback = function(Value)
@@ -130,7 +130,7 @@ Tab:AddToggle({
 	end
 })
   
-  Tab:AddToggle({
+Tab:AddToggle({
 	Name = "Ancient Scroll",
 	Default = false,
 	Callback = function(Value)
@@ -138,12 +138,11 @@ Tab:AddToggle({
 	end
 })
   
-  Tab:AddToggle({
+Tab:AddToggle({
 	Name = "Steel Ball",
 	Default = false,
 	Callback = function(Value)
   
 	end
 })
-
 OrionLib:Init()
