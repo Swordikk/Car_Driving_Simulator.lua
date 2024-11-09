@@ -48,19 +48,18 @@ Tab:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		while Value == true and Rokakaka do
-    Rokakaka.Parent = LivingName
-    wait(1)
-local args = {
-    [1] = "EndDialogue",
-    [2] = {
-        ["Option"] = "Option2",
-        ["NPC"] = "Merchant",
-        ["Dialogue"] = "Dialogue5"
-    }
-}
-
-game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-    end
+    		Rokakaka.Parent = LivingName
+    		wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
+    	end
 	end
 })
 
@@ -68,7 +67,19 @@ Tab:AddToggle({
 	Name = "Auto Sell Pure Rokakaka",
 	Default = false,
 	Callback = function(Value)
-		
+		while Value == true and PureRokakaka do
+    		PureRokakaka.Parent = LivingName
+    		wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
+    	end
 	end
 })
 
