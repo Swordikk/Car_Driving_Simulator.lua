@@ -51,7 +51,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddToggle({
+--[[Tab:AddToggle({
 	Name = "Auto Sell Rokakaka",
 	Default = false,
 	Callback = function(Value)
@@ -145,7 +145,7 @@ Tab:AddToggle({
 	Callback = function(Value)
 		
 	end
-})
+})]]
 
 -- Tab Teleports --
 local Tab = Window:MakeTab({
