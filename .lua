@@ -30,6 +30,15 @@ local function AutoRokakaka()
         if Rokakaka then
             Rokakaka.Parent = Character
             wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
         end
     end
 end
