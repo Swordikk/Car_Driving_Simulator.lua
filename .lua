@@ -77,7 +77,10 @@ Tab:AddToggle({
 	Name = "Auto Sell Myst. Arrow",
 	Default = false,
 	Callback = function(Value)
-		
+		_G.MysteriousArrow = Value
+		if Value then
+            AutoItem("Mysterious Arrow")
+        end
 	end
 })
   
@@ -85,7 +88,10 @@ Tab:AddToggle({
 	Name = "Auto Sell Diamond",
 	Default = false,
 	Callback = function(Value)
-		
+		_G.Diamond = Value
+		if Value then
+            AutoItem("Diamond")
+        end
 	end
 })
   
@@ -93,15 +99,10 @@ Tab:AddToggle({
 	Name = "Auto Sell Rib Cage",
 	Default = false,
 	Callback = function(Value)
-		
-	end
-})
-  
-Tab:AddToggle({
-	Name = "Auto Sell Zepellin's Headband",
-	Default = false,
-	Callback = function(Value)
-		
+		_G.RibCage = Value
+		if Value then
+            AutoItem("Rib Cage of The Saint's Corpse")
+        end
 	end
 })
 
@@ -109,7 +110,10 @@ Tab:AddToggle({
 	Name = "Auto Sell Pure Rokakaka",
 	Default = false,
 	Callback = function(Value)
-		
+		_G.PureRokakaka = Value
+		if Value then
+            AutoItem("Pure Rokakaka")
+        end
 	end
 })
   
@@ -117,7 +121,10 @@ Tab:AddToggle({
 	Name = "Stone Mask",
 	Default = false,
 	Callback = function(Value)
-		
+		_G.StoneMask = Value
+		if Value then
+            AutoItem("Stone Mask")
+        end
 	end
 })
   
@@ -125,7 +132,10 @@ Tab:AddToggle({
 	Name = "Dio's Diary",
 	Default = false,
 	Callback = function(Value)
-		
+		_G.DiosDiary = Value
+		if Value then
+            AutoItem("Dio's Diary")
+        end
 	end
 })
   
@@ -133,7 +143,10 @@ Tab:AddToggle({
 	Name = "Quinton's Glove",
 	Default = false,
 	Callback = function(Value)
-		
+		_G.QuintonsGlove = Value
+		if Value then
+            AutoItem("Quinton's Glove")
+        end
 	end
 })
   
@@ -141,7 +154,10 @@ Tab:AddToggle({
 	Name = "Ancient Scroll",
 	Default = false,
 	Callback = function(Value)
-		
+		_G.AncientScroll = Value
+		if Value then
+            AutoItem("Ancient Scroll")
+        end
 	end
 })
   
@@ -149,7 +165,10 @@ Tab:AddToggle({
 	Name = "Steel Ball",
 	Default = false,
 	Callback = function(Value)
-		
+		_G.SteelBall = Value
+		if Value then
+            AutoItem("SteelBallRunWins")
+        end
 	end
 })
 OrionLib:Init()
