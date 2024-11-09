@@ -11,12 +11,13 @@ local function getItem(itemName)
     return Player.Backpack:FindFirstChild(itemName) or Player.Character:FindFirstChild(itemName)
 end
 
-local function AutoItem(itemName, callback)
-    while _G[itemName] do wait(0.01)
-        local item = getItem(itemName)
+local function AutoItem(itemName)
+    while _G[itemName] do
+        wait(0.01)
+        local item = getItem(itemName)  -- Получаем текущий статус предмета
         if item then
-            item.Parent = Character
-            wait(1)
+            item.Parent = Character  -- Берем предмет в руки
+            wait(1)  -- Ожидание перед продажей или использованием
             local args = {
                 [1] = "EndDialogue",
                 [2] = {
@@ -51,124 +52,31 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 
-Tab:AddToggle({
-    Name = "Auto Sell Rokakaka",
-    Default = false,
-    Callback = function(Value)
-        _G.Rokakaka = Value
-        if Value then
-            AutoItem("Rokakaka")
-        end
-    end
-})
+local items = {
+    "Rokakaka",
+    "Gold Coin",
+    "Mysterious Arrow",
+    "Diamond",
+    "Rib Cage of The Saint's Corpse",
+    "Pure Rokakaka",
+    "Stone Mask",
+    "Dio's Diary",
+    "Quinton's Glove",
+    "Ancient Scroll",
+    "SteelBallRunWins"
+}
 
-Tab:AddToggle({
-    Name = "Auto Sell Gold Coin",
-    Default = false,
-    Callback = function(Value)
-        _G.GoldCoin = Value
-        if Value then
-            AutoItem("Gold Coin")
+for _, itemName in ipairs(items) do
+    Tab:AddToggle({
+        Name = "Auto Sell " .. itemName,
+        Default = false,
+        Callback = function(Value)
+            _G[itemName] = Value  -- Устанавливаем глобальную переменную для этого предмета
+            if Value then
+                AutoItem(itemName)
+            end
         end
-    end
-})
+    })
+end
 
-Tab:AddToggle({
-	Name = "Auto Sell Myst. Arrow",
-	Default = false,
-	Callback = function(Value)
-		_G.MysteriousArrow = Value
-		if Value then
-            AutoItem("Mysterious Arrow")
-        end
-	end
-})
-  
-Tab:AddToggle({
-	Name = "Auto Sell Diamond",
-	Default = false,
-	Callback = function(Value)
-		_G.Diamond = Value
-		if Value then
-            AutoItem("Diamond")
-        end
-	end
-})
-  
-Tab:AddToggle({
-	Name = "Auto Sell Rib Cage",
-	Default = false,
-	Callback = function(Value)
-		_G.RibCage = Value
-		if Value then
-            AutoItem("Rib Cage of The Saint's Corpse")
-        end
-	end
-})
-
-Tab:AddToggle({
-	Name = "Auto Sell Pure Rokakaka",
-	Default = false,
-	Callback = function(Value)
-		_G.PureRokakaka = Value
-		if Value then
-            AutoItem("Pure Rokakaka")
-        end
-	end
-})
-  
-Tab:AddToggle({
-	Name = "Stone Mask",
-	Default = false,
-	Callback = function(Value)
-		_G.StoneMask = Value
-		if Value then
-            AutoItem("Stone Mask")
-        end
-	end
-})
-  
-Tab:AddToggle({
-	Name = "Dio's Diary",
-	Default = false,
-	Callback = function(Value)
-		_G.DiosDiary = Value
-		if Value then
-            AutoItem("Dio's Diary")
-        end
-	end
-})
-  
-Tab:AddToggle({
-	Name = "Quinton's Glove",
-	Default = false,
-	Callback = function(Value)
-		_G.QuintonsGlove = Value
-		if Value then
-            AutoItem("Quinton's Glove")
-        end
-	end
-})
-  
-Tab:AddToggle({
-	Name = "Ancient Scroll",
-	Default = false,
-	Callback = function(Value)
-		_G.AncientScroll = Value
-		if Value then
-            AutoItem("Ancient Scroll")
-        end
-	end
-})
-  
-Tab:AddToggle({
-	Name = "Steel Ball",
-	Default = false,
-	Callback = function(Value)
-		_G.SteelBall = Value
-		if Value then
-            AutoItem("SteelBallRunWins")
-        end
-	end
-})
 OrionLib:Init()
