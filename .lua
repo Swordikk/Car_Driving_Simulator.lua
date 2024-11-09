@@ -87,7 +87,19 @@ Tab:AddToggle({
 	Name = "Auto Sell Gold Coin",
 	Default = false,
 	Callback = function(Value)
-		
+		while Value == true and GoldCoin do
+    		GoldCoin.Parent = LivingName
+    		wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
+		end
 	end
 })
 
