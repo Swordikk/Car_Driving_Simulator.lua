@@ -59,7 +59,7 @@ Tab:AddToggle({
 				}
 			}
 			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-    	end
+		end
 	end
 })
 
@@ -79,7 +79,7 @@ Tab:AddToggle({
 				}
 			}
 			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-    	end
+		end
 	end
 })
 
