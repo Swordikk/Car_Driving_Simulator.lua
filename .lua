@@ -47,9 +47,7 @@ Tab:AddToggle({
 	Name = "Auto Sell Rokakaka",
 	Default = false,
 	Callback = function(Value)
-		if Value == true and Rokakaka do
-			Rokakaka.Parent = LivingName
-		end
+		
 	end
 })
 
