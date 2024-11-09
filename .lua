@@ -4,8 +4,11 @@ local Window = OrionLib:MakeWindow({Name = "Script by Swordikk | ⚡YBA", HidePr
 
 local Humanoid = game.Players.LocalPlayer.Character.Humanoid
 local HumanoidRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-local LocalPlayer = game.Players.LocalPlayer.Character
-local Rokakaka = game.Players.LocalPlayer.Backpack
+local LivingName = game.Players.LocalPlayer.Character
+local PlayerName = game.Players.LocalPlayer
+
+local PureRokakaka = PlayerName.Backpack:WaitForChild("Pure Rokakaka")
+
 
 -- Function Misc --
 
@@ -45,6 +48,106 @@ Tab:AddToggle({
 	end
 })
 
+Tab:AddToggle({
+	Name = "Auto Sell Pure Rokakaka",
+	Default = false,
+	Callback = function(Value)
+		if Value == true and PureRokakaka then
+			PureRokakaka.Parent = LivingName
+			wait(1)
+			local args = {
+				[1] = "EndDialogue",
+				[2] = {
+					["Option"] = "Option2",
+					["NPC"] = "Merchant",
+					["Dialogue"] = "Dialogue5"
+				}
+			}
+			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
+		end
+	end
+})
+
+Tab:AddToggle({
+	Name = "Gold Coin",
+	Default = false,
+	Callback = function(Value)
+		
+	end
+})
+
+Tab:AddToggle({
+	Name = "Myst. Arrow",
+	Default = false,
+	Callback = function(Value)
+		
+	end
+})
+
+Tab:AddToggle({
+	Name = "Diamond",
+	Default = false,
+	Callback = function(Value)
+		
+	end
+})
+
+Tab:AddToggle({
+	Name = "Rib Cage",
+	Default = false,
+	Callback = function(Value)
+		
+	end
+})
+
+Tab:AddToggle({
+	Name = "Zepellin's Headband",
+	Default = false,
+	Callback = function(Value)
+		
+	end
+})
+
+Tab:AddToggle({
+	Name = "Stone Mask",
+	Default = false,
+	Callback = function(Value)
+		
+	end
+})
+
+Tab:AddToggle({
+	Name = "DEO's Diary",
+	Default = false,
+	Callback = function(Value)
+		
+	end
+})
+
+Tab:AddToggle({
+	Name = "Quinton's Glove",
+	Default = false,
+	Callback = function(Value)
+		
+	end
+})
+
+Tab:AddToggle({
+	Name = "Ancient Scroll",
+	Default = false,
+	Callback = function(Value)
+		
+	end
+})
+
+Tab:AddToggle({
+	Name = "Steel Ball",
+	Default = false,
+	Callback = function(Value)
+		
+	end
+})
+
 -- Tab Teleports --
 local Tab = Window:MakeTab({
 	Name = "Teleports",
@@ -53,11 +156,34 @@ local Tab = Window:MakeTab({
 })
 
 -- Tab Misc --
+local Tab = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483362748",
+	PremiumOnly = false
+})
+
 Tab:AddToggle({
 	Name = "Anti-AFK",
 	Default = false,
 	Callback = function(Value)
-		
+		if Value == true then
+			while not game:IsLoaded() do wait() end
+			repeat wait() until game.Players.LocalPlayer.Character
+			Players = game:GetService("Players")
+			local GC = getconnections or get_signal_cons
+			if GC then
+				for i,v in pairs(GC(Players.LocalPlayer.Idled)) do
+					if v["Disable"] then v["Disable"](v)
+					elseif v["Disconnect"] then v["Disconnect"](v)
+					end
+				end
+			else
+			Players.LocalPlayer.Idled:Connect(function()
+				VirtualUser:CaptureController()
+				VirtualUser:ClickButton2(Vector2.new())
+  				end)
+			end
+		end
 	end
 })
 
