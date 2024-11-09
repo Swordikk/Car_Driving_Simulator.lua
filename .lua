@@ -7,21 +7,35 @@ local HumanoidRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
 local LivingName = game.Players.LocalPlayer.Character
 local PlayerName = game.Players.LocalPlayer
 
-local PureRokakaka = PlayerName.Backpack:WaitForChild("Pure Rokakaka")
-local Rokakaka = PlayerName.Backpack:WaitForChild("Rokakaka")
-local Diamond = PlayerName.Backpack:WaitForChild("Diamond")
-local GoldCoin = PlayerName.Backpack:WaitForChild("Gold Coin")
-local ZepellinsHeadband = PlayerName.Backpack:WaitForChild("Zepellin' s Headband")
-local MysteriousArrow = PlayerName.Backpack:WaitForChild("Mysterious Arrow")
-local StoneMask = PlayerName.Backpack:WaitForChild("Stone Mask")
-local QuintonsGlove = PlayerName.Backpack:WaitForChild("Quinton's Glove")
-local SteelBall = PlayerName.Backpack:WaitForChild("SteelBallRunWins")
-local RibCage = PlayerName.Backpack:WaitForChild("Rib Cage of The Saint's Corpse")
-local AncientScroll = PlayerName.Backpack:WaitForChild("Ancient Scroll")
-local DiosDiary = PlayerName.Backpack:WaitForChild("Dio's Diary")
+local Rokakaka = PlayerName.Backpack:FindFirstChild("Rokakaka")
+local PureRokakaka = PlayerName.Backpack:FindFirstChild("Pure Rokakaka")
+local Diamond = PlayerName.Backpack:FindFirstChild("Diamond")
+local GoldCoin = PlayerName.Backpack:FindFirstChild("Gold Coin")
+local ZepellinsHeadband = PlayerName.Backpack:FindFirstChild("Zepellin' s Headband")
+local MysteriousArrow = PlayerName.Backpack:FindFirstChild("Mysterious Arrow")
+local StoneMask = PlayerName.Backpack:FindFirstChild("Stone Mask")
+local QuintonsGlove = PlayerName.Backpack:FindFirstChild("Quinton's Glove")
+local SteelBall = PlayerName.Backpack:FindFirstChild("SteelBallRunWins")
+local RibCage = PlayerName.Backpack:FindFirstChild("Rib Cage of The Saint's Corpse")
+local AncientScroll = PlayerName.Backpack:FindFirstChild("Ancient Scroll")
+local DiosDiary = PlayerName.Backpack:FindFirstChild("Dio's Diary")
 
-
--- Function Misc --
+-- Function Items --
+function Rokakaka()
+	while _G.Rokakaka == true and Rokakaka do
+		Rokakaka.Parent = LivingName
+		wait(1)
+		local args = {
+			[1] = "EndDialogue",
+			[2] = {
+				["Option"] = "Option2",
+				["NPC"] = "Merchant",
+				["Dialogue"] = "Dialogue5"
+			}
+		}
+		game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
+	end
+end
 
 ---- Tab Home ----
 local Tab = Window:MakeTab({
@@ -44,53 +58,12 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
----- Tab Teleports ----
-local Tab = Window:MakeTab({
-	Name = "Teleports",
-	Icon = "rbxassetid://4384402413",
-	PremiumOnly = false
-})
-
----- Tab Misc ----
-local Tab = Window:MakeTab({
-	Name = "Misc",
-	Icon = "rbxassetid://4483362748",
-	PremiumOnly = false
-})
-
----- Tab Themes ----
-local Tab = Window:MakeTab({
-	Name = "Themes",
-	Icon = "rbxassetid://4335483762",
-	PremiumOnly = false
-})
-
----- Tab Visuals ----
-local Tab = Window:MakeTab({
-	Name = "Visuals",
-	Icon = "rbxassetid://3610254229",
-	PremiumOnly = false
-})
-
----- Tab Configs ----
-local Tab = Window:MakeTab({
-	Name = "Configs",
-	Icon = "rbxassetid://3610247188",
-	PremiumOnly = false
-})
-
----- Tab Setthing ----
-local Tab = Window:MakeTab({
-	Name = "Setthings",
-	Icon = "rbxassetid://4483345737",
-	PremiumOnly = false
-})
-
---[[Tab:AddToggle({
+Tab:AddToggle({
 	Name = "Auto Sell Rokakaka",
 	Default = false,
 	Callback = function(Value)
-		
+		_G.Rokakaka = Value
+		Rokakaka()
 	end
 })
 
@@ -180,6 +153,48 @@ Tab:AddToggle({
 	Callback = function(Value)
 		
 	end
-})]]
+})
+
+---- Tab Teleports ----
+local Tab = Window:MakeTab({
+	Name = "Teleports",
+	Icon = "rbxassetid://4384402413",
+	PremiumOnly = false
+})
+
+---- Tab Misc ----
+local Tab = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483362748",
+	PremiumOnly = false
+})
+
+---- Tab Themes ----
+local Tab = Window:MakeTab({
+	Name = "Themes",
+	Icon = "rbxassetid://4335483762",
+	PremiumOnly = false
+})
+
+---- Tab Visuals ----
+local Tab = Window:MakeTab({
+	Name = "Visuals",
+	Icon = "rbxassetid://3610254229",
+	PremiumOnly = false
+})
+
+---- Tab Configs ----
+local Tab = Window:MakeTab({
+	Name = "Configs",
+	Icon = "rbxassetid://3610247188",
+	PremiumOnly = false
+})
+
+---- Tab Setthing ----
+local Tab = Window:MakeTab({
+	Name = "Setthings",
+	Icon = "rbxassetid://4483345737",
+	PremiumOnly = false
+})
 
 OrionLib:Init()
