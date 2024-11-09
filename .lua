@@ -44,10 +44,10 @@ local function AutoRokakaka()
 end
 
 local function AutoGoldCoin()
-    while _G.GoldCoin do wait(0.01)
-        if GoldCoin then
-            GoldCoin.Parent = Character
-            wait(1)
+	while _G.GoldCoin do wait(0.01)
+		if GoldCoin then
+			GoldCoin.Parent = Character
+			wait(1)
 			local args = {
 				[1] = "EndDialogue",
 				[2] = {
@@ -57,15 +57,15 @@ local function AutoGoldCoin()
 				}
 			}
 			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-        end
-    end
+		end
+	end
 end
 
 local function AutoMystArrow()
-    while _G.MysteriousArrow do wait(0.01)
-        if MysteriousArrow then
-            MysteriousArrow.Parent = Character
-            wait(1)
+	while _G.MysteriousArrow do wait(0.01)
+		if MysteriousArrow then
+			MysteriousArrow.Parent = Character
+			wait(1)
 			local args = {
 				[1] = "EndDialogue",
 				[2] = {
@@ -75,15 +75,15 @@ local function AutoMystArrow()
 				}
 			}
 			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-        end
-    end
+		end
+	end
 end
 
 local function AutoDiamond()
-    while _G.Diamond do wait(0.01)
-        if Diamond then
-            Diamond.Parent = Character
-            wait(1)
+	while _G.Diamond do wait(0.01)
+		if Diamond then
+			Diamond.Parent = Character
+			wait(1)
 			local args = {
 				[1] = "EndDialogue",
 				[2] = {
@@ -93,15 +93,15 @@ local function AutoDiamond()
 				}
 			}
 			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-        end
-    end
+		end
+	end
 end
 
 local function AutoPureRokakaka()
-    while _G.PureRokakaka do wait(0.01)
-        if PureRokakaka then
-            PureRokakaka.Parent = Character
-            wait(1)
+	while _G.PureRokakaka do wait(0.01)
+		if PureRokakaka then
+			PureRokakaka.Parent = Character
+			wait(1)
 			local args = {
 				[1] = "EndDialogue",
 				[2] = {
@@ -111,15 +111,15 @@ local function AutoPureRokakaka()
 				}
 			}
 			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-        end
-    end
+		end
+	end
 end
 
 local function AutoZepellinsHeadband()
-    while _G.ZepellinsHeadband do wait(0.01)
-        if ZepellinsHeadband then
-            ZepellinsHeadband.Parent = Character
-            wait(1)
+	while _G.ZepellinsHeadband do wait(0.01)
+		if ZepellinsHeadband then
+			ZepellinsHeadband.Parent = Character
+			wait(1)
 			local args = {
 				[1] = "EndDialogue",
 				[2] = {
@@ -134,10 +134,10 @@ local function AutoZepellinsHeadband()
 end
 
 local function AutoStoneMask()
-    while _G.StoneMask do wait(0.01)
-        if StoneMask then
+	while _G.StoneMask do wait(0.01)
+		if StoneMask then
             StoneMask.Parent = Character
-            wait(1)
+			wait(1)
 			local args = {
 				[1] = "EndDialogue",
 				[2] = {
@@ -147,15 +147,15 @@ local function AutoStoneMask()
 				}
 			}
 			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-        end
-    end
+		end
+	end
 end
 
 local function AutoQuintonsGlove()
-    while _G.QuintonsGlove do wait(0.01) 
-        if QuintonsGlove then
-            QuintonsGlove.Parent = Character
-            wait(1)
+	while _G.QuintonsGlove do wait(0.01) 
+		if QuintonsGlove then
+			QuintonsGlove.Parent = Character
+			wait(1)
 			local args = {
 				[1] = "EndDialogue",
 				[2] = {
@@ -165,15 +165,15 @@ local function AutoQuintonsGlove()
 				}
 			}
 			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-        end
-    end
+		end
+	end
 end
 
 local function AutoSteelBall()
-    while _G.SteelBall do wait(0.01)
-        if SteelBall then
-            SteelBall.Parent = Character
-            wait(1)
+	while _G.SteelBall do wait(0.01)
+		if SteelBall then
+			SteelBall.Parent = Character
+			wait(1)
 			local args = {
 				[1] = "EndDialogue",
 				[2] = {
@@ -183,15 +183,15 @@ local function AutoSteelBall()
 				}
 			}
 			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-        end
-    end
+		end
+	end
 end
 
 local function AutoRibCage()
-    while _G.RibCage do wait(0.01)
-        if RibCage then
-            RibCage.Parent = Character
-            wait(1)
+	while _G.RibCage do wait(0.01)
+		if RibCage then
+			RibCage.Parent = Character
+			wait(1)
 			local args = {
 				[1] = "EndDialogue",
 				[2] = {
@@ -201,15 +201,15 @@ local function AutoRibCage()
 				}
 			}
 			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-        end
-    end
+		end
+	end
 end
 
 local function AutoAncientScroll()
-    while _G.AncientScroll do wait(0.01)
-        if AncientScroll then
-            AncientScroll.Parent = Character
-            wait(1)
+	while _G.AncientScroll do wait(0.01)
+		if AncientScroll then
+			AncientScroll.Parent = Character
+			wait(1)
 			local args = {
 				[1] = "EndDialogue",
 				[2] = {
@@ -219,15 +219,15 @@ local function AutoAncientScroll()
 				}
 			}
 			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-        end
-    end
+		end
+	end
 end
 
 local function AutoDiosDiary()
-    while _G.DiosDiary do wait(0.01)
-        if DiosDiary then
-            DiosDiary.Parent = Character
-            wait(1)
+	while _G.DiosDiary do wait(0.01)
+		if DiosDiary then
+			DiosDiary.Parent = Character
+			wait(1)
 			local args = {
 				[1] = "EndDialogue",
 				[2] = {
@@ -237,51 +237,51 @@ local function AutoDiosDiary()
 				}
 			}
 			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-        end
-    end
+		end
+	end
 end
 
 ---- Tab Home ----
 local Tab = Window:MakeTab({
-    Name = "Home",
-    Icon = "rbxassetid://4370345144",
-    PremiumOnly = false
+	Name = "Home",
+	Icon = "rbxassetid://4370345144",
+	PremiumOnly = false
 })
 
 ---- Tab Farming ----
 local Tab = Window:MakeTab({
-    Name = "Farming",
-    Icon = "rbxassetid://4483364237",
-    PremiumOnly = false
+	Name = "Farming",
+	Icon = "rbxassetid://4483364237",
+	PremiumOnly = false
 })
 
 ---- Tab Items ----
 local Tab = Window:MakeTab({
-    Name = "Items",
-    Icon = "rbxassetid://4335482575",
-    PremiumOnly = false
+	Name = "Items",
+	Icon = "rbxassetid://4335482575",
+	PremiumOnly = false
 })
 
 Tab:AddToggle({
-    Name = "Auto Sell Rokakaka",
-    Default = false,
-    Callback = function(Value)
-        _G.Rokakaka = Value
-        if Value then
-            AutoRokakaka()
-        end
-    end
+	Name = "Auto Sell Rokakaka",
+	Default = false,
+	Callback = function(Value)
+		_G.Rokakaka = Value
+		if Value then
+			AutoRokakaka()
+		end
+	end
 })
 
 Tab:AddToggle({
-    Name = "Auto Sell Gold Coin",
-    Default = false,
-    Callback = function(Value)
-        _G.GoldCoin = Value
+	Name = "Auto Sell Gold Coin",
+	Default = false,
+	Callback = function(Value)
+		_G.GoldCoin = Value
 		if Value then
 			AutoGoldCoin()
 		end
-    end
+	end
 })
 
 Tab:AddToggle({
@@ -329,14 +329,14 @@ Tab:AddToggle({
 })
 
 Tab:AddToggle({
-    Name = "Auto Sell Pure Rokakaka",
-    Default = false,
-    Callback = function(Value)
-        _G.PureRokakaka = Value
-        if Value then
-            AutoPureRokakaka()
-        end
-    end
+	Name = "Auto Sell Pure Rokakaka",
+	Default = false,
+	Callback = function(Value)
+		_G.PureRokakaka = Value
+		if Value then
+			AutoPureRokakaka()
+		end
+	end
 })
   
 Tab:AddToggle({
