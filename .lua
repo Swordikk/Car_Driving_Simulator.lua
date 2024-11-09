@@ -49,16 +49,6 @@ Tab:AddToggle({
 	Callback = function(Value)
 		if Value == true and Rokakaka do
 			Rokakaka.Parent = LivingName
-			wait(1)
-			local args = {
-				[1] = "EndDialogue",
-				[2] = {
-					["Option"] = "Option2",
-					["NPC"] = "Merchant",
-					["Dialogue"] = "Dialogue5"
-				}
-			}
-			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
 		end
 	end
 })
