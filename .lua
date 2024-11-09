@@ -63,119 +63,47 @@ Tab:AddToggle({
 	Name = "Auto Sell Pure Rokakaka",
 	Default = false,
 	Callback = function(Value)
-		--[[if Value == true and PureRokakaka then
-			PureRokakaka.Parent = LivingName
-			wait(1)
-			local args = {
-				[1] = "EndDialogue",
-				[2] = {
-					["Option"] = "Option2",
-					["NPC"] = "Merchant",
-					["Dialogue"] = "Dialogue5"
-				}
-			}
-			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-		end]]
+		
 	end
 })
 
 Tab:AddToggle({
-	Name = "Gold Coin",
+	Name = "Auto Sell Gold Coin",
 	Default = false,
 	Callback = function(Value)
-		--[[if Value == true and GoldCoin then
-			GoldCoin.Parent = LivingName
-			wait(1)
-			local args = {
-				[1] = "EndDialogue",
-				[2] = {
-					["Option"] = "Option2",
-					["NPC"] = "Merchant",
-					["Dialogue"] = "Dialogue5"
-				}
-			}
-			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-		end]]
+		
 	end
 })
 
 Tab:AddToggle({
-	Name = "Myst. Arrow",
+	Name = "Auto Sell Myst. Arrow",
 	Default = false,
 	Callback = function(Value)
-		--[[if Value == true and MysteriousArrow then
-			MysteriousArrow.Parent = LivingName
-			wait(1)
-			local args = {
-				[1] = "EndDialogue",
-				[2] = {
-					["Option"] = "Option2",
-					["NPC"] = "Merchant",
-					["Dialogue"] = "Dialogue5"
-				}
-			}
-			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-		end]]
+		
 	end
 })
 
 Tab:AddToggle({
-	Name = "Diamond",
+	Name = "Auto Sell Diamond",
 	Default = false,
 	Callback = function(Value)
-		--[[if Value == true and Diamond then
-			Diamond.Parent = LivingName
-			wait(1)
-			local args = {
-				[1] = "EndDialogue",
-				[2] = {
-					["Option"] = "Option2",
-					["NPC"] = "Merchant",
-					["Dialogue"] = "Dialogue5"
-				}
-			}
-			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-		end]]
+		
 	end
 })
 
 Tab:AddToggle({
-	Name = "Rib Cage",
+	Name = "Auto Sell Rib Cage",
 	Default = false,
 	Callback = function(Value)
-		--[[if Value == true and RibCage then
-			RibCage.Parent = LivingName
-			wait(1)
-			local args = {
-				[1] = "EndDialogue",
-				[2] = {
-					["Option"] = "Option2",
-					["NPC"] = "Merchant",
-					["Dialogue"] = "Dialogue5"
-				}
-			}
-			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-		end]]
+		
 	end
 })
 
 Tab:AddToggle({
-	Name = "Zepellin's Headband",
+	Name = "Auto Sell Zepellin's Headband",
 	Default = false,
 	Callback = function(Value)
-		--[[if Value == true and ZepellinsHeadband then
-			ZepellinsHeadband.Parent = LivingName
-			wait(1)
-			local args = {
-				[1] = "EndDialogue",
-				[2] = {
-					["Option"] = "Option2",
-					["NPC"] = "Merchant",
-					["Dialogue"] = "Dialogue5"
-				}
-			}
-			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-		end]]
+		
 	end
 })
 
@@ -183,19 +111,7 @@ Tab:AddToggle({
 	Name = "Stone Mask",
 	Default = false,
 	Callback = function(Value)
-		--[[if Value == true and StoneMask then
-			StoneMask.Parent = LivingName
-			wait(1)
-			local args = {
-				[1] = "EndDialogue",
-				[2] = {
-					["Option"] = "Option2",
-					["NPC"] = "Merchant",
-					["Dialogue"] = "Dialogue5"
-				}
-			}
-			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-		end]]
+		
 	end
 })
 
@@ -203,19 +119,7 @@ Tab:AddToggle({
 	Name = "Dio's Diary",
 	Default = false,
 	Callback = function(Value)
-		--[[if Value == true and DiosDiary then
-			DiosDiary.Parent = LivingName
-			wait(1)
-			local args = {
-				[1] = "EndDialogue",
-				[2] = {
-					["Option"] = "Option2",
-					["NPC"] = "Merchant",
-					["Dialogue"] = "Dialogue5"
-				}
-			}
-			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-		end]]
+		
 	end
 })
 
@@ -223,19 +127,7 @@ Tab:AddToggle({
 	Name = "Quinton's Glove",
 	Default = false,
 	Callback = function(Value)
-		--[[if Value == true and QuintonsGlove then
-			QuintonsGlove.Parent = LivingName
-			wait(1)
-			local args = {
-				[1] = "EndDialogue",
-				[2] = {
-					["Option"] = "Option2",
-					["NPC"] = "Merchant",
-					["Dialogue"] = "Dialogue5"
-				}
-			}
-			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-		end]]
+
 	end
 })
 
@@ -243,19 +135,7 @@ Tab:AddToggle({
 	Name = "Ancient Scroll",
 	Default = false,
 	Callback = function(Value)
-		--[[if Value == true and AncientScroll then
-			AncientScroll.Parent = LivingName
-			wait(1)
-			local args = {
-				[1] = "EndDialogue",
-				[2] = {
-					["Option"] = "Option2",
-					["NPC"] = "Merchant",
-					["Dialogue"] = "Dialogue5"
-				}
-			}
-			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-		end]]
+		
 	end
 })
 
@@ -263,19 +143,7 @@ Tab:AddToggle({
 	Name = "Steel Ball",
 	Default = false,
 	Callback = function(Value)
-		--[[if Value == true and SteelBall then
-			SteelBall.Parent = LivingName
-			wait(1)
-			local args = {
-				[1] = "EndDialogue",
-				[2] = {
-					["Option"] = "Option2",
-					["NPC"] = "Merchant",
-					["Dialogue"] = "Dialogue5"
-				}
-			}
-			game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args))
-		end]]
+		
 	end
 })
 
