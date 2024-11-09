@@ -5,20 +5,9 @@ local Window = OrionLib:MakeWindow({Name = "Script by Swordikk | ⚡YBA", HidePr
 local Humanoid = game.Players.LocalPlayer.Character.Humanoid
 local HumanoidRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
 local LocalPlayer = game.Players.LocalPlayer.Character
-local Rokakaka = game.Player.PanikPas.Backpack
+local Rokakaka = game.Players.LocalPlayer.Backpack
 
 -- Function Misc --
-function WalkSpeed()
-	while _G.WalkSpeed do task.wait(.00000001)
-	    Humanoid.WalkSpeed = _G.WalkSpeed
-    end
-end
-
-function JumpPower()
-	while _G.JumpPower do task.wait(.00000001)
-	    Humanoid.JumpPower = _G.JumpPower
-    end
-end
 
 -- Tab Home --
 local Tab = Window:MakeTab({
@@ -34,12 +23,12 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
---[[Tab:AddButton({
+Tab:AddButton({
 	Name = "Script for AutoFarm",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/zakater5/LuaRepo/main/YBA/v3.lua"))()
+
   	end    
-})]]--
+})
 
 -- Tab Items --
 local Tab = Window:MakeTab({
@@ -48,13 +37,13 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
---[[Tab:AddToggle({
+Tab:AddToggle({
 	Name = "Auto Sell Rokakaka",
 	Default = false,
 	Callback = function(Value)
 		
 	end
-})]]--
+})
 
 -- Tab Teleports --
 local Tab = Window:MakeTab({
@@ -64,28 +53,11 @@ local Tab = Window:MakeTab({
 })
 
 -- Tab Misc --
---[[Tab:AddToggle({
+Tab:AddToggle({
 	Name = "Anti-AFK",
 	Default = false,
 	Callback = function(Value)
-		if Value == true then
-			while not game:IsLoaded() do wait() end
-			repeat wait() until game.Players.LocalPlayer.Character
-			Players = game:GetService("Players")
-			local GC = getconnections or get_signal_cons
-			if GC then
-				for i,v in pairs(GC(Players.LocalPlayer.Idled)) do
-					if v["Disable"] then v["Disable"](v)
-					elseif v["Disconnect"] then v["Disconnect"](v)
-					end
-				end
-			else
-			Players.LocalPlayer.Idled:Connect(function()
-				VirtualUser:CaptureController()
-				VirtualUser:ClickButton2(Vector2.new())
-  				end)
-			end
-		end
+		
 	end
 })
 
@@ -94,8 +66,7 @@ Tab:AddTextbox({
 	Default = "",
 	TextDisappear = false,
 	Callback = function(Value)
-		_G.WalkSpeed = Value
-		WalkSpeed()
+		
 	end
 })
 
@@ -104,10 +75,9 @@ Tab:AddTextbox({
 	Default = "",
 	TextDisappear = false,
 	Callback = function(Value)
-		_G.JumpPower = Value
-		JumpPower()
+		
 	end
-})]]--
+})
 
 -- Tab Themes --
 local Tab = Window:MakeTab({
