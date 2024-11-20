@@ -88,7 +88,8 @@ local items = {
     "Dio's Diary",
     "Quinton's Glove",
     "Ancient Scroll",
-    "SteelBallRunWins"
+    "SteelBallRunWins",
+    "Caesar's Headband"
 }
 
 for _, itemName in ipairs(items) do
