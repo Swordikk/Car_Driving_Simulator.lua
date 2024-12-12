@@ -1,13 +1,9 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Script by Swordikk | ⚡Realistik_Driving_Sinulator", HidePremium = false, IntroText = "Script for Malfoy4ik", SaveConfig = true, IntroEnabled = true, ConfigFolder = "Scripts"})
+local Window = OrionLib:MakeWindow({Name = "Script by Swordikk | ⚡Realistik_Driving_Simulator", HidePremium = false, IntroText = "Script for Malfoy4ik", SaveConfig = true, IntroEnabled = true, ConfigFolder = "Scripts"})
 
 local Humanoid = game.Players.LocalPlayer.Character.Humanoid
 local HumanoidRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-
-function AutoFarmMiles()
-
-end
 
 function WalkSpeed()
 	while _G.WalkSpeed do game:GetService("RunService").RenderStepped:wait()
@@ -27,13 +23,24 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddButton({
+	Name = "AutoFarm Cash/Miles",
+	Callback = function()
+		--[[game.Workspace.PanikPassCar.Body:WaitForChild("#Weight").CFrame = CFrame.new(-1017.6805419921875, 210.262760162353516, 2818.939697265625)]]--
+		game.Workspace.xMalfoy_STsCar.Body:WaitForChild("#Weight").CFrame = CFrame.new(-1017.6805419921875, 310.262760162353516, 2818.939697265625)
+  	end    
+})
 
-Tab:AddToggle({
-	Name = "AutoFarm Miles",
-	Default = false,
-	Callback = function(Value)
-		_G.AutoFarmMiles = Value
-		AutoFarmMiles()
+Tab:AddDropdown({
+	Name = "Spawn Car",
+	Default = "None",
+	Options = {"Favia 500", "Pegasus Nexus", "", ""},
+	Callback = function(Option)
+		if Option == "Favia 500" then
+			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpawnCar"):FireServer("Favia 500")
+		elseif Option == "Pegasus Nexus" then
+			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpawnCar"):FireServer("Pegasus Nexus")
+		end
 	end    
 })
 
@@ -41,15 +48,6 @@ local Tab = Window:MakeTab({
 	Name = "Misc",
 	Icon = "rbxassetid://4483362748",
 	PremiumOnly = false
-})
-
-Tab:AddTextbox({
-	Name = "Spawn Cars",
-	Default = "Cars For Cash",
-	TextDisappear = true,
-	Callback = function(Value)
-		
-	end	  
 })
 
 Tab:AddTextbox({
