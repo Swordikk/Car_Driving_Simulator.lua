@@ -31,17 +31,13 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddDropdown({
+Tab:AddTextbox({
 	Name = "Spawn Car",
-	Default = "None",
-	Options = {"Favia 500", "Pegasus Nexus", "", ""},
-	Callback = function(Option)
-		if Option == "Favia 500" then
-			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpawnCar"):FireServer("Favia 500")
-		elseif Option == "Pegasus Nexus" then
-			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpawnCar"):FireServer("Pegasus Nexus")
-		end
-	end    
+	Default = "",
+	TextDisappear = false,
+	Callback = function(Value)
+		game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpawnCar"):FireServer(Value)
+	end
 })
 
 local Tab = Window:MakeTab({
